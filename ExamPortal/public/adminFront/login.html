@@ -1,0 +1,22 @@
+
+   <div class="container">
+<legend>Login</legend>
+<fieldset>
+    <form ng-submit="doLogin()">
+<table border="1">
+   <tr>
+       <td><label for="">AdminID:</label></td>
+       <td><input type="text" placeholder="Enter id" ng-model="form.id"></td>
+   </tr>
+   <tr>
+       <td><label for="">Password:</label></td>
+       <td><input type="password" placeholder="password" ng-model="form.password"></td>
+       <span style="color:red">{{error}}</span>
+   </tr>
+</table>
+<button type="reset">RESET</button>
+<button type="submit">LOGIN</button> 
+</form>   
+</fieldset>       
+</div> 
+>

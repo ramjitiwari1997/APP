@@ -1,0 +1,19 @@
+app.config(function($routeProvider,$locationProvider){
+    $locationProvider.hashPrefix('');
+    $routeProvider.when('/adminLogin',{
+        templateUrl:"adminFront/login.html",
+        controller:"adminLoginCtrl"
+    }).when("/admin_dashboard",{
+        templateUrl:"../adminFront/dashboard.html",
+        controller:"adminDashCtrl"
+    }).when("/teacher",{
+        templateUrl:"../adminFront/adteacher.html",
+        controller:"adTeacherCtrl"
+    }).when("/student",{
+        templateUrl:"../adminFront/adstudent",
+        controller:"adStudentCtrl"
+    }).when("/operations",{
+        templateUrl:"../adOperations.html",
+        controller:"adOperationsCtrl"
+    })
+    });
